@@ -11,6 +11,12 @@
 		1DE1C2402A1D5338000B62BA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE1C23F2A1D5338000B62BA /* ContentView.swift */; };
 		1DE1C2422A1D5339000B62BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DE1C2412A1D5339000B62BA /* Assets.xcassets */; };
 		1DE1C2452A1D5339000B62BA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DE1C2442A1D5339000B62BA /* Preview Assets.xcassets */; };
+		1DE1C24C2A1D5608000B62BA /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE1C24B2A1D5608000B62BA /* Post.swift */; };
+		1DE1C24E2A1D5FFA000B62BA /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE1C24D2A1D5FFA000B62BA /* InfoView.swift */; };
+		1DE1C2542A1D6134000B62BA /* InfoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE1C2532A1D6134000B62BA /* InfoRow.swift */; };
+		1DE1C2562A1D613C000B62BA /* InfoDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE1C2552A1D613C000B62BA /* InfoDetails.swift */; };
+		1DE1C2582A1D6442000B62BA /* HelloView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE1C2572A1D6442000B62BA /* HelloView.swift */; };
+		1DE1C25A2A1D64A5000B62BA /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE1C2592A1D64A5000B62BA /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		1DE1C23F2A1D5338000B62BA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1DE1C2412A1D5339000B62BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DE1C2442A1D5339000B62BA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1DE1C24B2A1D5608000B62BA /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		1DE1C24D2A1D5FFA000B62BA /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		1DE1C2532A1D6134000B62BA /* InfoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoRow.swift; sourceTree = "<group>"; };
+		1DE1C2552A1D613C000B62BA /* InfoDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoDetails.swift; sourceTree = "<group>"; };
+		1DE1C2572A1D6442000B62BA /* HelloView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloView.swift; sourceTree = "<group>"; };
+		1DE1C2592A1D64A5000B62BA /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +65,12 @@
 			children = (
 				1DE1C23D2A1D5338000B62BA /* BMWMtechApp.swift */,
 				1DE1C23F2A1D5338000B62BA /* ContentView.swift */,
+				1DE1C24B2A1D5608000B62BA /* Post.swift */,
+				1DE1C24D2A1D5FFA000B62BA /* InfoView.swift */,
+				1DE1C2532A1D6134000B62BA /* InfoRow.swift */,
+				1DE1C2552A1D613C000B62BA /* InfoDetails.swift */,
+				1DE1C2572A1D6442000B62BA /* HelloView.swift */,
+				1DE1C2592A1D64A5000B62BA /* SettingsView.swift */,
 				1DE1C2412A1D5339000B62BA /* Assets.xcassets */,
 				1DE1C2432A1D5339000B62BA /* Preview Content */,
 			);
@@ -137,8 +155,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DE1C24E2A1D5FFA000B62BA /* InfoView.swift in Sources */,
+				1DE1C25A2A1D64A5000B62BA /* SettingsView.swift in Sources */,
+				1DE1C24C2A1D5608000B62BA /* Post.swift in Sources */,
 				1DE1C2402A1D5338000B62BA /* ContentView.swift in Sources */,
 				1DE1C23E2A1D5338000B62BA /* BMWMtechApp.swift in Sources */,
+				1DE1C2562A1D613C000B62BA /* InfoDetails.swift in Sources */,
+				1DE1C2582A1D6442000B62BA /* HelloView.swift in Sources */,
+				1DE1C2542A1D6134000B62BA /* InfoRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
