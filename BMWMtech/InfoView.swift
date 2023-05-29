@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct InfoView: View {
+    @AppStorage("titleOnInfo") var titleOnInfo = false
+    
     var body: some View {
         NavigationView {
             List(Post.data) { post in
@@ -17,7 +19,7 @@ struct InfoView: View {
                     InfoRow(post: post)
                 }
             }
-            .navigationTitle("BMW M series")
+            .navigationTitle(self.titleOnInfo ? "BMW M series" : "")
             .listStyle(.plain)
         }
     }
