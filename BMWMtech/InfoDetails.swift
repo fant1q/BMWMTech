@@ -27,6 +27,10 @@ struct InfoDetails: View {
                 Divider()
                 
                 Text(post.description)
+                
+                Divider()
+                
+                Text("Разгон 0-100 км/ч равен \(post.acceleration) c")
             }
             .padding()
         }

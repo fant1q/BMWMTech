@@ -12,6 +12,7 @@ struct Post: Identifiable {
     let title: String
     let subtitle: String
     let description: String
+    let acceleration: Double
     let image: Image
     
     static let data = [
@@ -24,8 +25,9 @@ struct Post: Identifiable {
              TwinPower Turbo моЩностью 460 л.с.
              • Адаптивная подвеска М с активным дифференциалом М и задним приводом
              • Механическая коробка передач или автоматическая коробка передач M Steptronic с функцией Drivelogic
-             • 460 л.С., 550 Нм, 0-100 км/ч за 4,1 с (M Steptronic)
+             • 460 л.С., 550 Нм
              """,
+             acceleration: 4.1,
              image: Image("bmwm2")),
         Post(id: 2,
              title: "BMW M3 Competition",
@@ -36,8 +38,9 @@ struct Post: Identifiable {
              TwinPower Turbo мощностью 510 л.С.
              • 8-ступенчатая спортивная коробка передач M Steptronic с функцией Drivelogic
              • Полный привод M ×Drive
-             • 510 л.с., 650 Нм, 0-100 км/ч за 3,5 с
+             • 510 л.с., 650 Нм
              """,
+             acceleration: 3.5,
              image: Image("bmwm3")),
         Post(id: 3,
              title: "BMW M4 Coupe",
@@ -48,6 +51,7 @@ struct Post: Identifiable {
              BMW M4 Competition Coupe впечатляет мощностью 510 л.с. и крутящим моментом 650 Нм. Этот автомобиль, оснащенный высокопроизводительным двигателем BMW M TwinPower Turbo, 8-ступенчатой АКПП M Steptronic с технологией Drivelogic, опциональной системой полного привода M xDrive, активным дифференциалом M и многочисленными технологиями, позаимствованными в автоспорте, гарантирует максимальные динамические характеристики – как в повседневной эксплуатации, так и на гоночных трассах.
              BMW M440i xDrive Coupe, помимо привлекательного дизайна, впечатляет особенно сбалансированным сочетанием атлетизма, экономичности и практичности в повседневной эксплуатации.
              """,
+             acceleration: 3.7,
              image: Image("bmwm4")),
         Post(id: 4,
              title: "BMW M5 Competition",
@@ -59,13 +63,13 @@ struct Post: Identifiable {
              BMW M5 Competition
              Мощность двигателя: 625 л.с.
              Расход топлива: 10,6 л/100 км
-             Разгон (0–100 км/ч): 3,3 с
               
              BMW M5 CS
              Мощность двигателя: 635 л.с.
              Расход топлива: 10,6 л/100 км
              Разгон (0–100 км/ч): 3,0 с
              """,
+             acceleration: 3.3,
              image: Image("bmwm5")),
         Post(id: 5,
              title: "BMW M760Li xDrive",
@@ -93,6 +97,7 @@ struct Post: Identifiable {
              Расход топлива: 6,2 л/100 км
              Разгон (0–100 км/ч): 5,4 с
              """,
+             acceleration: 3.8,
              image: Image("bmwm7")),
         Post(id: 6,
              title: "BMW М8 Gran Coupe",
@@ -102,8 +107,9 @@ struct Post: Identifiable {
              • 8-цилиндровый двигатель M TwinPower Turbo мощностью 625 л.с.
              • Полный привод M ×Drive с активным дифференциалом М
              • Эксклюзивные элементы дизайна и оснащения
-             • 625 л.с., 750 Нм, 0-100 км/ч за 3,2 с
+             • 625 л.с., 750 Нм
              """,
+             acceleration: 3.2,
              image: Image("bmwm8")),
         Post(id: 7,
              title: "BMW X5 M Competition",
@@ -119,8 +125,8 @@ struct Post: Identifiable {
              BMW X5 M Competition
              Мощность двигателя: 625 л.с.
              Расход топлива: 12,5 л/100 км
-             Разгон (0–100 км/ч): 3,8 с
              """,
+             acceleration: 3.8,
              image: Image("bmwx5m")),
         Post(id: 8,
              title: "BMW X6 M Competition",
@@ -136,8 +142,8 @@ struct Post: Identifiable {
              BMW X6 M Competition
              Мощность двигателя: 625 л.с.
              Расход топлива: 12,5 л/100 км
-             Разгон (0–100 км/ч): 3,8 с
              """,
+             acceleration: 3.8,
              image: Image("bmwx6m")),
     
     ]

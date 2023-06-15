@@ -16,9 +16,9 @@ struct ContentView: View {
                 .tabItem {
                     Label("Auto", systemImage: "m.square.fill")
                 }
-            HelloView()
+            Stats()
                 .tabItem {
-                    Label("Hello", systemImage: "h.square.fill")
+                    Label("Stats", systemImage: "car.2.fill")
                 }
             SettingsView(titleOn: $titleOnInfo)
                 .tabItem {
