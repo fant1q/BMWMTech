@@ -8,32 +8,47 @@
 import SwiftUI
 
 struct SettingsView: View {
-    @State private var linkOn = false
-    @State private var toggler = true
-    
+    @State private var toggler = false
     @State private var sliderValue = 25.0
-    @State private var isChanging = false
     
-    private var array = ["1", "2", "3"]
+    @Environment(\.colorScheme) var colorScheme
+    @Binding var titleOn: Bool
+    
+    private let array = ["1", "2", "3"]
     @State private var selectedIndex = 0
+    @AppStorage("titleOnInfo") var titleOnInfo = false
     
     var body: some View {
         ZStack {
             Form {
                 Section {
-                    Toggle("Some toggle", isOn: $linkOn)
+                    Toggle("Title toggle", isOn: $toggler.animation())
+                        .onChange(of: toggler) { on in
+                            if on  {
+                                titleOn.toggle()
+                                titleOnInfo = titleOn
+                            } else {
+                                titleOn.toggle()
+                                titleOnInfo = titleOn
+                            }
+                        }
                     
-                    Text("Hello")
+                    if titleOn {
+                        Text("Navigation title enabled")
+                    }
+                    
+                    Text( (colorScheme == .dark ? "Dark" : "Light") + " Theme enabled")
                         .padding(26)
                 }
                 Section {
                     Slider(value: $sliderValue, in: 0...100)
                     
                     Picker(selection: $selectedIndex, label: Text("Select Number")) {
-                        ForEach(0 ..< array.count) {
+                        ForEach(0 ..< array.count,
+                                id: \.self) {
                             Text(self.array[$0])
                         }
-                  }
+                    }
                     .padding(26)
                 }
             }
@@ -43,6 +58,6 @@ struct SettingsView: View {
 
 struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
-        SettingsView()
+        SettingsView(titleOn: .constant(false))
     }
 }
